@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lucasalvarez99.github.io/cerrajeria/sitemap.xml

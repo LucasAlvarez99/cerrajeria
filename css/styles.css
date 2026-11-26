@@ -40,6 +40,8 @@ ul,ol{margin:0;padding:0;list-style:none}
 .btn--wa:hover{background:var(--verde-h)}
 .btn--grande{min-height:78px;padding:14px 28px;font-size:1.3rem}
 .btn--full{width:100%}
+.btn{max-width:100%}
+.btn>span{min-width:0;overflow-wrap:break-word}
 
 /* Estado del cerrajero */
 .estado{display:flex;align-items:center;justify-content:center;gap:12px;padding:12px 20px;text-align:center;font-weight:700;background:var(--papel2);color:var(--tinta);border-bottom:1px solid var(--linea)}
@@ -53,7 +55,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .top{position:sticky;top:0;z-index:50;background:var(--pizarra);color:#fff}
 .top__in{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:76px}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none}
-.marca__logo{width:38px;height:44px}
+.marca__logo{width:38px;height:44px;flex:none}
 .marca__txt{display:flex;flex-direction:column;line-height:1.15}
 .marca__txt strong{font:700 1.3rem var(--titulos)}
 .marca__txt small{font-size:1.125rem;color:#c9d1d8}
@@ -89,7 +91,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .pedir__intro p{max-width:30em}
 .pedir__foto{display:flex;gap:10px;align-items:flex-start;padding:14px 16px;background:var(--papel2);border:2px solid var(--linea);border-left:6px solid var(--laton-t);border-radius:var(--radio)}
 .pedir__foto .ico{color:var(--pizarra);width:1.4em;height:1.4em;margin-top:.1em}
-.pedir__llamar a{font-weight:700;text-underline-offset:4px}
+.pedir__llamar a{display:inline-block;padding:10px 0;font-weight:700;text-underline-offset:4px}
 .form{background:var(--blanco);border:2px solid var(--linea);border-radius:14px;padding:22px 20px}
 .paso{border:0;margin:0 0 26px;padding:0;min-width:0}
 .paso legend,.paso__t{display:flex;align-items:center;gap:12px;font:700 1.3rem/1.25 var(--titulos);margin:0 0 14px;padding:0}
@@ -166,7 +168,7 @@ details p{margin:0;padding:0 18px 18px;color:var(--suave)}
 .pie__in{display:grid;gap:8px}
 .pie p{margin:0}
 .pie strong{color:#fff}
-.pie__tel{color:var(--laton);font-weight:700}
+.pie__tel{display:inline-block;padding:10px 0;color:var(--laton);font-weight:700}
 .pie__legal,.pie__mini{font-size:1.125rem;color:#aab4be}
 
 /* Barra fija celular */
@@ -203,3 +205,7 @@ body{padding-bottom:86px}
   .servicios{grid-template-columns:repeat(3,1fr)}
   .pie__in{grid-template-columns:repeat(3,auto);justify-content:space-between;align-items:start}
 }
+
+@media (max-width:380px){.btn--grande{padding:12px 18px;font-size:1.2rem}.wrap{padding:0 16px}}
+@media (max-width:380px){.barra{gap:8px;padding-left:8px;padding-right:8px}.barra .btn{padding:8px 6px;gap:.4em;font-size:1.125rem}.barra .ico{width:1.3em;height:1.3em}}
+@media (max-width:380px){.btn--top .ico{display:none}.btn--top{padding:8px 12px;font-size:1.125rem}.marca{gap:8px}.marca__txt strong{font-size:1.125rem}}

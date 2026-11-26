@@ -14,3 +14,10 @@ Teléfono real, zona y barrios, formas de pago, que le sirva "precio antes de em
 
 ## Medición
 Cada botón dispara un evento (`llamar_hero`, `whatsapp_form_enviado`, etc.) a `dataLayer`/`gtag` si están instalados.
+
+## SEO
+- Título, descripción, canonical, Open Graph/Twitter, datos estructurados (Locksmith, WebSite y FAQPage) y `sitemap.xml` están en `index.html` y la raíz.
+- La URL actual es `https://lucasalvarez99.github.io/cerrajeria/`. **Si se compra un dominio propio**, cambiarla en `index.html` (canonical, og:url, og:image, JSON-LD), `robots.txt` y `sitemap.xml`, y mover `robots.txt` a la raíz del dominio.
+- Si cambian el teléfono o los barrios, actualizar también el JSON-LD de `index.html` (el texto visible sale de `js/config.js`).
+- Al editar CSS/JS, subir el número `?v=` en `index.html` para evitar caché.
+- Pendiente fuera de la página: crear el Perfil de Empresa en Google con el mismo nombre y teléfono, y dar de alta el sitio en Search Console.

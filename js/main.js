@@ -28,9 +28,6 @@
     el.addEventListener("click", function () { track(el.getAttribute("data-evento")); });
   });
 
-  /* Título de página según zona */
-  if (C.zona && C.nombre) document.title = "Cerrajero a domicilio en " + C.zona + " | " + C.nombre;
-
   /* Estado (también se puede probar con ?estado=en-trabajo) */
   var textos = {
     "disponible": "Disponible ahora: llamame o escribime.",
@@ -45,6 +42,7 @@
 
   /* Barrios */
   var chips = $("#chips");
+  if (C.barrios && C.barrios.length) chips.innerHTML = "";
   (C.barrios || []).forEach(function (b) {
     var li = document.createElement("li");
     li.textContent = b;
@@ -57,20 +55,6 @@
   if (C.titular) legal.push("Titular: " + C.titular);
   if (C.cuit) legal.push("CUIT: " + C.cuit);
   if (legal.length) { var l = $("#legal"); l.textContent = legal.join(" · "); l.hidden = false; }
-
-  /* Datos estructurados para Google (se arman con la config) */
-  var ld = {
-    "@context": "https://schema.org",
-    "@type": "Locksmith",
-    "name": C.nombre,
-    "telephone": "+" + C.telefono,
-    "description": "Cerrajero a domicilio en " + C.zona + ": aperturas, cambio de cerraduras, llaves rotas y autos.",
-    "areaServed": (C.barrios || []).map(function (b) { return { "@type": "Place", "name": b }; })
-  };
-  var s = document.createElement("script");
-  s.type = "application/ld+json";
-  s.text = JSON.stringify(ld);
-  document.head.appendChild(s);
 
   /* Accesos que preseleccionan el problema y llevan al formulario */
   var porClave = {
