@@ -3,12 +3,12 @@
    Todo lo demás de la página se completa solo desde acá.
    ============================================================ */
 window.CERRAJERIA = {
-  nombre: "Cerrajería Tu Llave",
+  nombre: "Cerrajería",
 
   // WhatsApp / teléfono en formato internacional SIN signos (celular argentino: 549 + código de área + número)
-  telefono: "5491100000000",
+  telefono: "5491162651262",
   // Cómo se ve el número en pantalla
-  telefonoVisible: "11 0000-0000",
+  telefonoVisible: "+54 9 11 6265-1262",
 
   // Zona principal (aparece en el título de la página)
   zona: "Buenos Aires",
