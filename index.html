@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cerrajero a domicilio en Buenos Aires | Cerrajería</title>
   <meta name="description" content="Cerrajero a domicilio: me quedé afuera, cambio de cerraduras, llaves rotas. Llamá o escribí por WhatsApp y voy hasta tu puerta. Te digo el precio antes de empezar.">
-  <meta name="theme-color" content="#07162f">
+  <meta name="theme-color" content="#1c2733">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
   <meta property="og:title" content="Cerrajero a domicilio en Buenos Aires | Cerrajería">
@@ -13,8 +13,8 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 <body>
 <a class="skip" href="#pedir">Saltar al pedido de cerrajero</a>
@@ -45,9 +45,9 @@
   <div class="wrap top__in">
     <a class="marca" href="#inicio" aria-label="Cerrajería, ir al inicio">
       <svg class="marca__logo" viewBox="0 0 48 56" aria-hidden="true">
-        <path d="M24 2 4 9v18c0 13 8.500 22 20 27 11.500-5 20-14 20-27V9z" fill="#0b2147" stroke="#ffc21a" stroke-width="3"/>
-        <circle cx="24" cy="23" r="6" fill="#ffc21a"/>
-        <path d="M21.500 27h5l1.800 13h-8.600z" fill="#ffc21a"/>
+        <path d="M24 2 4 9v18c0 13 8.500 22 20 27 11.500-5 20-14 20-27V9z" fill="#1c2733" stroke="#d8c08a" stroke-width="3"/>
+        <circle cx="24" cy="23" r="6" fill="#d8c08a"/>
+        <path d="M21.500 27h5l1.800 13h-8.600z" fill="#d8c08a"/>
       </svg>
       <span class="marca__txt"><strong data-bind="nombre">Cerrajería </strong><small>Cerrajero a domicilio</small></span>
     </a>
@@ -57,9 +57,9 @@
       <a href="#zonas">Zonas</a>
       <a href="#preguntas">Preguntas</a>
     </nav>
-    <a class="btn btn--amarillo btn--top" data-tel data-evento="llamar_header" href="tel:+5491162651262">
+    <a class="btn btn--llamar btn--top" data-tel data-evento="llamar_header" href="tel:+5491162651262">
       <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
-      <span><span class="solo-pc">Llamar </span><b data-bind="telefonoVisible">+54 9 11 6265-1262</b></span>
+      <span><span class="solo-pc">Llamar </span><b data-bind="telefonoVisible">11 6265-1262</b></span>
     </a>
   </div>
 </header>
@@ -73,9 +73,9 @@
         <h1 id="h1">Cerrajero a domicilio en <span class="resalta" data-bind="zona">Buenos Aires</span></h1>
         <p class="hero__sub">¿Te quedaste afuera? ¿Se rompió la llave? ¿Querés cambiar la cerradura? Llamame o escribime y te digo cuánto sale <strong>antes de empezar</strong>.</p>
         <div class="hero__botones">
-          <a class="btn btn--amarillo btn--grande" data-tel data-evento="llamar_hero" href="tel:+5491162651262">
+          <a class="btn btn--llamar btn--grande" data-tel data-evento="llamar_hero" href="tel:+5491162651262">
             <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
-            <span>Llamar ahora<small data-bind="telefonoVisible">+54 9 11 6265-1262</small></span>
+            <span>Llamar ahora<small data-bind="telefonoVisible">11 6265-1262</small></span>
           </a>
           <a class="btn btn--wa btn--grande" data-wa data-evento="whatsapp_hero" href="https://wa.me/5491162651262" target="_blank" rel="noopener">
             <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>
@@ -87,17 +87,13 @@
 
       <div class="hero__arte" aria-hidden="true">
         <svg viewBox="0 0 320 380" class="puerta">
-          <defs>
-            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#1b3f7d"/><stop offset="1" stop-color="#0b2147"/></linearGradient>
-            <radialGradient id="g2" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffc21a" stop-opacity=".55"/><stop offset="1" stop-color="#ffc21a" stop-opacity="0"/></radialGradient>
-          </defs>
-          <rect x="30" y="10" width="260" height="360" rx="14" fill="url(#g1)" stroke="#2b5aa8" stroke-width="3"/>
-          <rect x="58" y="38" width="204" height="130" rx="8" fill="none" stroke="#2b5aa8" stroke-width="3"/>
-          <rect x="58" y="196" width="204" height="150" rx="8" fill="none" stroke="#2b5aa8" stroke-width="3"/>
-          <circle cx="226" cy="190" r="80" fill="url(#g2)"/>
-          <rect x="196" y="150" width="62" height="88" rx="12" fill="#ffc21a"/>
-          <circle cx="227" cy="186" r="12" fill="#0b2147"/>
-          <path d="M222 192h10l4 28h-18z" fill="#0b2147"/>
+          
+          <rect x="30" y="10" width="260" height="360" rx="14" fill="#26343f" stroke="#4a5b69" stroke-width="3"/>
+          <rect x="58" y="38" width="204" height="130" rx="8" fill="none" stroke="#4a5b69" stroke-width="3"/>
+          <rect x="58" y="196" width="204" height="150" rx="8" fill="none" stroke="#4a5b69" stroke-width="3"/>
+                    <rect x="196" y="150" width="62" height="88" rx="12" fill="#d8c08a"/>
+          <circle cx="227" cy="186" r="12" fill="#1c2733"/>
+          <path d="M222 192h10l4 28h-18z" fill="#1c2733"/>
         </svg>
       </div>
     </div>
@@ -119,7 +115,7 @@
         <h2 id="h-pedir">Pedí tu cerrajero en 3 pasos</h2>
         <p>Contame qué pasó y dónde estás. Se abre WhatsApp con el mensaje ya escrito, solo tenés que apretar enviar.</p>
         <p class="pedir__foto"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Si podés, mandame una <strong>foto de la cerradura</strong>: así llevo lo justo y llego más rápido.</span></p>
-        <p class="pedir__llamar">¿Preferís hablar? <a data-tel data-evento="llamar_pedir" href="tel:+5491162651262">Llamame al <b data-bind="telefonoVisible">+54 9 11 6265-1262</b></a></p>
+        <p class="pedir__llamar">¿Preferís hablar? <a data-tel data-evento="llamar_pedir" href="tel:+5491162651262">Llamame al <b data-bind="telefonoVisible">11 6265-1262</b></a></p>
       </div>
 
       <form class="form" id="form" novalidate>
@@ -236,9 +232,9 @@
       <h2 id="h-cierre">¿Necesitás un cerrajero?</h2>
       <p>Llamame o escribime ahora. Te respondo apenas pueda.</p>
       <div class="hero__botones hero__botones--centro">
-        <a class="btn btn--amarillo btn--grande" data-tel data-evento="llamar_cierre" href="tel:+5491162651262">
+        <a class="btn btn--llamar btn--grande" data-tel data-evento="llamar_cierre" href="tel:+5491162651262">
           <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
-          <span>Llamar ahora<small data-bind="telefonoVisible">+54 9 11 6265-1262</small></span>
+          <span>Llamar ahora<small data-bind="telefonoVisible">11 6265-1262</small></span>
         </a>
         <a class="btn btn--wa btn--grande" data-wa data-evento="whatsapp_cierre" href="https://wa.me/5491162651262" target="_blank" rel="noopener">
           <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>
@@ -252,7 +248,7 @@
 <footer class="pie">
   <div class="wrap pie__in">
     <p><strong data-bind="nombre">Cerrajería </strong><br>Cerrajero a domicilio en <span data-bind="zona">Buenos Aires</span></p>
-    <p>Teléfono y WhatsApp: <a data-tel href="tel:+5491162651262" class="pie__tel" data-bind="telefonoVisible">+54 9 11 6265-1262</a></p>
+    <p>Teléfono y WhatsApp: <a data-tel href="tel:+5491162651262" class="pie__tel" data-bind="telefonoVisible">11 6265-1262</a></p>
     <p id="legal" class="pie__legal" hidden></p>
     <p class="pie__mini">Página hecha por WizardCo</p>
   </div>
@@ -260,11 +256,11 @@
 
 <!-- Barra fija en celular: siempre a mano -->
 <nav class="barra" aria-label="Contacto rápido">
-  <a class="btn btn--amarillo" data-tel data-evento="llamar_barra" href="tel:+5491162651262"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span>Llamar</span></a>
+  <a class="btn btn--llamar" data-tel data-evento="llamar_barra" href="tel:+5491162651262"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span>Llamar</span></a>
   <a class="btn btn--wa" data-wa data-evento="whatsapp_barra" href="https://wa.me/5491162651262" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
 </nav>
 
-<script src="js/config.js"></script>
-<script src="js/main.js"></script>
+<script src="js/config.js?v=3"></script>
+<script src="js/main.js?v=3"></script>
 </body>
 </html>

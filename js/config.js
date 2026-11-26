@@ -8,7 +8,7 @@ window.CERRAJERIA = {
   // WhatsApp / teléfono en formato internacional SIN signos (celular argentino: 549 + código de área + número)
   telefono: "5491162651262",
   // Cómo se ve el número en pantalla
-  telefonoVisible: "+54 9 11 6265-1262",
+  telefonoVisible: "11 6265-1262",
 
   // Zona principal (aparece en el título de la página)
   zona: "Buenos Aires",
